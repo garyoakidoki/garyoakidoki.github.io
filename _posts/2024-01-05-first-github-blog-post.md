@@ -3,6 +3,9 @@ title: My First Blog Post Entry
 date: 2024-01-05 17:50:00 +0800
 categories: [Blogging]
 tags: [writing]     # TAG names should always be lowercase
+math: true
+comments: true
+youtubeId: 
 ---
 
 ### Hello friend
