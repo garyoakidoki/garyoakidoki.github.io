@@ -67,7 +67,10 @@ DISM and SFC are frontends for Component-Based Servicing (CBS), which keeps a lo
 
 ### Further reading
 
-    OS integrity diagnosis cheat sheet: This short Microsoft Support article sums up this article in 4 bullet points, telling you how to run DISM and SFC in correct order. This is your cheat sheet.
-    Fix Windows Update errors by using the DISM or System Update Readiness tool: This Microsoft Learn article has in-depth info about using DISM (and its Windows 7 counterpart, SUR) to fix corrupt or missing OS files.
-    Use the System File Checker tool to repair missing or corrupted system files: This Microsoft Support article has in-depth info on the second step of fixing corrupt or missing OS files, which SFC. It even teaches you how to automate extracting repair details from the CBS.log file.
-    Understanding Component-Based Servicing: This TechNet article, written by CC Hameed (not Craig Marcho), contains valuable details on CBS, the backend that DISM and SFC use.
+<a rel="noreferrer noopener" href="https://support.microsoft.com/en-us/windows/using-system-file-checker-in-windows-365e0031-36b1-6031-f804-8fd86e0ef4ca" target="_blank">OS integrity diagnosis cheat sheet</a>:</strong> This short Microsoft Support article sums up this article in 4 bullet points, telling you how to run DISM and SFC in correct order. This is your cheat sheet.</li>
+
+<li><strong><a rel="noreferrer noopener" href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/deployment/fix-windows-update-errors" target="_blank">Fix Windows Update errors by using the DISM or System Update Readiness tool</a>:</strong> This Microsoft Learn article has in-depth info about using DISM (and its Windows 7 counterpart, SUR) to fix corrupt or missing OS files.</li>
+
+<li><strong><a rel="noreferrer noopener" href="https://support.microsoft.com/en-us/topic/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system-files-79aa86cb-ca52-166a-92a3-966e85d4094e" target="_blank">Use the System File Checker tool to repair missing or corrupted system files</a>:</strong> This Microsoft Support article has in-depth info on the second step of fixing corrupt or missing OS files, which SFC. It even teaches you how to automate extracting repair details from the CBS.log file.</li>
+
+<li><strong><a rel="noreferrer noopener" href="https://techcommunity.microsoft.com/t5/ask-the-performance-team/understanding-component-based-servicing/ba-p/373012" target="_blank">Understanding Component-Based Servicing</a>:</strong> This TechNet article, written by CC Hameed (not Craig Marcho),  contains valuable details on CBS, the backend that DISM and SFC use.</li>
