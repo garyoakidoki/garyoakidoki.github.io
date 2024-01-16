@@ -68,7 +68,7 @@ DISM and SFC are frontends for Component-Based Servicing (CBS), which keeps a lo
 
 ### Further reading
 
-<a rel="noreferrer noopener" href="https://support.microsoft.com/en-us/windows/using-system-file-checker-in-windows-365e0031-36b1-6031-f804-8fd86e0ef4ca" target="_blank">OS integrity diagnosis cheat sheet</a>:</strong> This short Microsoft Support article sums up this article in 4 bullet points, telling you how to run DISM and SFC in correct order. This is your cheat sheet.</li>
+<li><strong><a rel="noreferrer noopener" href="https://support.microsoft.com/en-us/windows/using-system-file-checker-in-windows-365e0031-36b1-6031-f804-8fd86e0ef4ca" target="_blank">OS integrity diagnosis cheat sheet</a>:</strong> This short Microsoft Support article sums up this article in 4 bullet points, telling you how to run DISM and SFC in correct order. This is your cheat sheet.</li>
 
 <li><strong><a rel="noreferrer noopener" href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/deployment/fix-windows-update-errors" target="_blank">Fix Windows Update errors by using the DISM or System Update Readiness tool</a>:</strong> This Microsoft Learn article has in-depth info about using DISM (and its Windows 7 counterpart, SUR) to fix corrupt or missing OS files.</li>
 
