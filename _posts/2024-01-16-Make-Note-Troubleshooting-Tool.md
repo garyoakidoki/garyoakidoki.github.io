@@ -8,8 +8,9 @@ comments: true
 youtubeId: 
 ---
 
+# This blog post is NOT original! The SOURCE and ALL CREDITS GO TO HERE: https://confidentialfiles.wordpress.com/2023/08/10/what-every-windows-user-must-know-about-dism-and-sfc/
+
 ### What every Windows user must know about DISM and SFC
-This blog post is NOT original! The SOURCE and ALL CREDITS GO TO HERE: https://confidentialfiles.wordpress.com/2023/08/10/what-every-windows-user-must-know-about-dism-and-sfc/
 
 Microsoft Windows offers two built-in utilities for repairing the operating system: DISM and SFC. As of this writing, these utilities have gained farcical popularity! People who see the slightest sign of something wrong with their dog run them.
 
