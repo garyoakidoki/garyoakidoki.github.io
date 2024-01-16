@@ -44,21 +44,21 @@ To repair the running OS from the legacy Command Prompt, issue the following com
 
 ### Mistakes to avoid
 
-    Do not change the order of the commands. The correct order, as mentioned above, is the disk checkup, DISM, and SFC.
-    If one command returned an error message, do not proceed to the next. These error messages are indicators of the problems you need to solve.
-    Do not run anything else while you’re running a disk checkup, DISM, or SFC. Close as many apps, processes, and tasks as possible beforehand.
-    Do not run DISM with /StartComponentCleanup, /CheckHealth, or /ScanHealth. If you don’t know what they are doing, you’re not the right person to run them.
-    Do not run chkdsk c: /f. This command is obsolete.
+1. Do not change the order of the commands. The correct order, as mentioned above, is the disk checkup, DISM, and SFC.
+2. If one command returned an error message, do not proceed to the next. These error messages are indicators of the problems you need to solve.
+3. Do not run anything else while you’re running a disk checkup, DISM, or SFC. Close as many apps, processes, and tasks as possible beforehand.
+4. Do not run DISM with /StartComponentCleanup, /CheckHealth, or /ScanHealth. If you don’t know what they are doing, you’re not the right person to run them.
+5. Do not run chkdsk c: /f. This command is obsolete.
 
 ### Limitations
 
 As explained above, DISM and SFC have narrow uses. They repair the component store and legacy components respectively. More specifically, DISM and SFC cannot repair the following:
 
-    Microsoft Store apps bundled with Windows: To fix these, try resetting them via the Settings app or the Appx module of PowerShell.
-    Registry: The only surefire way of fixing the Windows Registry is through prevention via backup.
-    Defender Antivirus: Short of reinstalling Windows, there is no way to fix this item because it breaks easily and resists repair. To add insult to injury, most people, including those who work for Microsoft, don’t know the difference between “Defender Antivirus” and “Windows Security.” (Yes, they are distinct. On Windows Server, you can install them separately.)
-    Edge: To fix this item, download a fresh copy from Microsoft’s website. However, it might resist repair because Microsoft is actively looking for ways to prevent users from removing it.
-    OneDrive: To fix this item, just reinstall it. You can grab a fresh copy from Microsoft’s website.
+* Microsoft Store apps bundled with Windows: To fix these, try resetting them via the Settings app or the Appx module of PowerShell.
+* Registry: The only surefire way of fixing the Windows Registry is through prevention via backup.
+* Defender Antivirus: Short of reinstalling Windows, there is no way to fix this item because it breaks easily and resists repair. To add insult to injury, most people, including those who work for Microsoft, don’t know the difference between “Defender Antivirus” and “Windows Security.” (Yes, they are distinct. On Windows Server, you can install them separately.)
+* Edge: To fix this item, download a fresh copy from Microsoft’s website. However, it might resist repair because Microsoft is actively looking for ways to prevent users from removing it.
+* OneDrive: To fix this item, just reinstall it. You can grab a fresh copy from Microsoft’s website.
 
 ### DISM’s log
 
