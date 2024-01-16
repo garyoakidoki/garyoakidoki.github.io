@@ -28,39 +28,20 @@ As mentioned above, SFC’s repair source is DISM’s repair target. Therefore, 
 In addition, healthy files need a healthy disk. So, you may benefit from running a disk checkup before DISM or SFC.
 
 To repair the running OS from PowerShell, issue the following commands. If you ever forgot them, PowerShell’s inline completion is there to help you.
-1
-2
-3
-4
-5
-6
-7
-	
-Repair-Volume -DriveLetter C -Scan
- 
-# ----- Restart your system now -----
- 
-Repair-WindowsImage -Online -RestoreHealth
- 
-SFC.exe /ScanNow
+
+    Repair-Volume -DriveLetter C -Scan
+    # ----- Restart your system now -----
+    Repair-WindowsImage -Online -RestoreHealth
+    SFC.exe /ScanNow
 
 To repair the running OS from the legacy Command Prompt, issue the following commands. Unlike PowerShell, Windows Command Prompt provides no coding aids.
-1
-2
-3
-4
-5
-6
-7
-	
-ChkDsk c: /Scan /ForceOfflineFix
- 
-REM ----- Restart your system now -----
- 
-DISM.exe /Online /Cleanup-Image /RetoreHealth
- 
-SFC.exe /ScanNow
-Mistakes to avoid
+
+    ChkDsk c: /Scan /ForceOfflineFix
+    REM ----- Restart your system now -----
+    DISM.exe /Online /Cleanup-Image /RetoreHealth
+    SFC.exe /ScanNow
+
+### Mistakes to avoid
 
     Do not change the order of the commands. The correct order, as mentioned above, is the disk checkup, DISM, and SFC.
     If one command returned an error message, do not proceed to the next. These error messages are indicators of the problems you need to solve.
@@ -68,7 +49,7 @@ Mistakes to avoid
     Do not run DISM with /StartComponentCleanup, /CheckHealth, or /ScanHealth. If you don’t know what they are doing, you’re not the right person to run them.
     Do not run chkdsk c: /f. This command is obsolete.
 
-Limitations
+### Limitations
 
 As explained above, DISM and SFC have narrow uses. They repair the component store and legacy components respectively. More specifically, DISM and SFC cannot repair the following:
 
@@ -78,12 +59,13 @@ As explained above, DISM and SFC have narrow uses. They repair the component sto
     Edge: To fix this item, download a fresh copy from Microsoft’s website. However, it might resist repair because Microsoft is actively looking for ways to prevent users from removing it.
     OneDrive: To fix this item, just reinstall it. You can grab a fresh copy from Microsoft’s website.
 
-DISM’s log
+### DISM’s log
 
 DISM creates a log at C:\Windows\Logs\DISM\dism.log. You can change the log’s location and level of details, but don’t bother. It contains nothing of value. It consists of 113 entries that DISM inserts at the moment of execution and 48 others at termination. DISM logs nothing for the entire length of its operation, which takes 10 to 20 minutes.
 
 DISM and SFC are frontends for Component-Based Servicing (CBS), which keeps a log at C:\Windows\Logs\CBS\CBS.log, where you can find the details of changes that DISM and SFC have made to your system.
-Further reading
+
+### Further reading
 
     OS integrity diagnosis cheat sheet: This short Microsoft Support article sums up this article in 4 bullet points, telling you how to run DISM and SFC in correct order. This is your cheat sheet.
     Fix Windows Update errors by using the DISM or System Update Readiness tool: This Microsoft Learn article has in-depth info about using DISM (and its Windows 7 counterpart, SUR) to fix corrupt or missing OS files.
