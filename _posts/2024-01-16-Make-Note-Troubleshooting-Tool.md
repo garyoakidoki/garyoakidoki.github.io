@@ -39,7 +39,7 @@ To repair the running OS from the legacy Command Prompt, issue the following com
 
     ChkDsk c: /Scan /ForceOfflineFix
     REM ----- Restart your system now -----
-    DISM.exe /Online /Cleanup-Image /RetoreHealth
+    DISM.exe /Online /Cleanup-Image /RestoreHealth
     SFC.exe /ScanNow
 
 ### Mistakes to avoid
