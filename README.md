@@ -35,10 +35,10 @@ the basic environment. [Git](https://git-scm.com/) also needs to be installed.
 Sign in to GitHub and [**use this template**][use-template] to generate a brand new repository and name it
 `USERNAME.github.io`, where `USERNAME` represents your GitHub username.
 
-Then clone it to your local machine and run:
+Then clone it to your local machine and To run the site locally, use the following command::
 
 ```console
-$ bundle
+$ bundle exec jekyll s
 ```
 
 ## Usage
